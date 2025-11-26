@@ -6,7 +6,8 @@ public class Conexao {
         try{
             String url = "jdbc:mysql: //localhost:3306/cadastro";
             String user = "root"; // troque pelo seu usuário
-            String password = "1234"; // troque pela sua senha
+            String password = ""; // troque pela sua senha
+            Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
             throw new RuntimeException("Erro na conexão: " + e.getMessage());

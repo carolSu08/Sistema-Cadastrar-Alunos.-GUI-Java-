@@ -57,7 +57,7 @@ public class JanelaPrincipal extends JFrame {
         painelCadastro.add(new JLabel("Genero"));
         JPanel painelGenero = new JPanel();
         radioMasc = new JRadioButton("Masculino");
-        radioMasc = new JRadioButton("Feminino");
+        radioFem = new JRadioButton("Feminino");
         ButtonGroup grupoGenero = new ButtonGroup();
         grupoGenero.add(radioMasc);
         grupoGenero.add(radioFem);
